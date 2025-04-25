@@ -6,7 +6,6 @@ import { poppins, raleway } from "./fonts"
 export const metadata: Metadata = {
   title: "Kahon | Portfolio",
   description: "Full Stack Developer Portfolio",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

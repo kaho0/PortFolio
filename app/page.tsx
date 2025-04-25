@@ -38,12 +38,14 @@ export default function Home() {
               className="profile-image"
             />
           </div>
+          <div className="text-center">
           <h1 className="text-2xl font-bold font-heading text-primary mb-1">Kahon Binte Zaman</h1>
           <p className="text-muted-foreground mb-6">Full Stack Developer</p>
 
           <p className="text-sm text-center text-muted-foreground">
             Learning machine learning algorithms and data science
           </p>
+          </div>
 
           <div className="social-icons mt-auto mb-8">
             <a href="https://github.com/kaho0" target="_blank" rel="noopener noreferrer" className="social-icon">
