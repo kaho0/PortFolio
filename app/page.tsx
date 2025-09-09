@@ -1,19 +1,19 @@
-"use client"
-import { useState } from "react"
-import Image from "next/image"
-import { Github, Linkedin, Mail, Download, Twitter, Menu } from "lucide-react"
-import { About } from "@/components/about"
-import { Skills } from "@/components/skills"
-import { Projects } from "@/components/projects"
-import { Contact } from "@/components/contact"
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import { Github, Linkedin, Mail, Download, Twitter, Menu } from "lucide-react";
+import { About } from "@/components/about";
+import { Skills } from "@/components/skills";
+import { Projects } from "@/components/projects";
+import { Contact } from "@/components/contact";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("about")
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [activeTab, setActiveTab] = useState("about");
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen)
-  }
+    setSidebarOpen(!sidebarOpen);
+  };
 
   return (
     <div className="flex flex-col md:flex-row">
@@ -27,7 +27,9 @@ export default function Home() {
       </button>
 
       {/* Sidebar */}
-      <aside className={`sidebar ${sidebarOpen ? "sidebar-open" : "sidebar-closed"}`}>
+      <aside
+        className={`sidebar ${sidebarOpen ? "sidebar-open" : "sidebar-closed"}`}
+      >
         <div className="flex flex-col items-center h-full">
           <div className="mb-4 mt-10">
             <Image
@@ -39,16 +41,23 @@ export default function Home() {
             />
           </div>
           <div className="text-center">
-          <h1 className="text-2xl font-bold font-heading text-primary mb-1">Kahon Binte Zaman</h1>
-          <p className="text-muted-foreground mb-6">Full Stack Developer</p>
+            <h1 className="text-2xl font-bold font-heading text-primary mb-1">
+              Kahon Binte Zaman
+            </h1>
+            <p className="text-muted-foreground mb-6">Full Stack Developer</p>
 
-          <p className="text-sm text-center text-muted-foreground">
-            Learning machine learning algorithms and data science
-          </p>
+            <p className="text-sm text-center text-muted-foreground">
+              Learning machine learning algorithms and AI ML
+            </p>
           </div>
 
           <div className="social-icons mt-auto mb-8">
-            <a href="https://github.com/kaho0" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a
+              href="https://github.com/kaho0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <Github size={20} />
             </a>
             <a
@@ -59,7 +68,12 @@ export default function Home() {
             >
               <Linkedin size={20} />
             </a>
-            <a href="https://x.com/Kahoo_z" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a
+              href="https://x.com/Kahoo_z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <Twitter size={20} />
             </a>
             <a href="mailto:kahonbintezaman@gmail.com" className="social-icon">
@@ -79,7 +93,11 @@ export default function Home() {
       </aside>
 
       {/* Main Content */}
-      <main className={`main-content ${sidebarOpen ? "content-with-sidebar" : "content-full"}`}>
+      <main
+        className={`main-content ${
+          sidebarOpen ? "content-with-sidebar" : "content-full"
+        }`}
+      >
         <div className="tab-container">
           <button
             className={`tab-button ${activeTab === "about" ? "active" : ""}`}
@@ -110,16 +128,22 @@ export default function Home() {
         <div className={`tab-content ${activeTab === "about" ? "active" : ""}`}>
           <About />
         </div>
-        <div className={`tab-content ${activeTab === "skills" ? "active" : ""}`}>
+        <div
+          className={`tab-content ${activeTab === "skills" ? "active" : ""}`}
+        >
           <Skills />
         </div>
-        <div className={`tab-content ${activeTab === "projects" ? "active" : ""}`}>
+        <div
+          className={`tab-content ${activeTab === "projects" ? "active" : ""}`}
+        >
           <Projects />
         </div>
-        <div className={`tab-content ${activeTab === "contact" ? "active" : ""}`}>
+        <div
+          className={`tab-content ${activeTab === "contact" ? "active" : ""}`}
+        >
           <Contact />
         </div>
       </main>
     </div>
-  )
+  );
 }

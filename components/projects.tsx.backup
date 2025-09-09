@@ -4,24 +4,92 @@ import { Github, ExternalLink } from "lucide-react";
 export function Projects() {
   const projects = [
     {
-      title: "OneEarth",
+      title: "My Vid",
       description:
-        "AI-powered platform for wildlife conservation with species data and a cruelty-free shopping assistant. Winner of AnimalHack 2025.",
-      imageUrl: "/1.png",
-      technologies: ["Next.js", "FastAPI", "Gemini", "FAISS", "TypeScript"],
-      githubUrl: "https://github.com/kaho0/OneEarth",
-      demoUrl: "https://animal-rho-six.vercel.app/",
+        "A simple YouTube clone with features like search, category-wise videos, and video playback.",
+      imageUrl: "https://i.ibb.co.com/RkDfPRc3/image.png",
+      technologies: ["React.js", "DaisyUI", "Node.js", "Express.js", "MongoDB"],
+      githubUrl: "https://github.com/kaho0/My-Vid",
+      demoUrl: "https://you-vid-xi.vercel.app/",
     },
     {
-      title: "VerdictAI",
+      title: "Voyage Vista",
       description:
-        "AI-driven legal assistant offering real-time Q&A on Bangladesh law using a Gemini and FAISS backend.",
-      imageUrl: "/2.png",
+        "A travel booking platform for users to explore destinations and book seamlessly.",
+      imageUrl: "https://i.ibb.co.com/H12ph08/image.png",
+      technologies: ["React.js", "DaisyUI", "Node.js", "Express.js", "MongoDB"],
+      githubUrl: "https://github.com/kaho0/Voyage-vista",
+      demoUrl: "https://vista-omega.vercel.app/",
+    },
+    {
+      title: "Gradiaaa",
+      description:
+        "A full-stack web application that enhances interaction between students and teachers.",
+      imageUrl: "https://i.ibb.co.com/9k37Cqjc/image.png",
+      technologies: [
+        "React.js",
+        "DaisyUI",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+      ],
+      githubUrl: "https://github.com/kaho0/Gradiaaa",
+      demoUrl: "https://gradiaaa.vercel.app/",
+    },
+    {
+      title: "Skylaa",
+      description:
+        "A real-time chatting app built with the MERN stack and Socket.io.",
+      imageUrl: "https://i.ibb.co.com/bgzBhqKJ/image.png",
+      technologies: [
+        "React.js",
+        "TailwindCSS",
+        "DaisyUI",
+        "Node.js",
+        "Express.js",
+        "Socket.io",
+        "Zustand",
+        "JWT",
+      ],
+      githubUrl: "https://github.com/kaho0/Skylaa",
+      demoUrl: "https://skyla-7t80.onrender.com/",
+    },
+    {
+      title: "Meloo",
+      description: "A music streaming platform with a clean interface.",
+      imageUrl: "https://i.ibb.co.com/gMksX2g6/image.png",
+      technologies: ["React.js", "TailwindCSS", "Gemini API"],
+      githubUrl: "https://github.com/kaho0/Meloo",
+      demoUrl: "https://melobo.vercel.app/",
+    },
+    {
+      title: "OneEarth – AI Wildlife Conservation Platform",
+      description:
+        "Conservation platform with IUCN species data and a RAG-powered cruelty‑free shopping assistant using Google Gemini and FAISS.",
+      imageUrl: "/1.png",
       technologies: [
         "Next.js",
         "FastAPI",
         "Gemini",
+        "Cohere",
         "FAISS",
+        "TypeScript",
+      ],
+      githubUrl: "https://github.com/kaho0/OneEarth",
+      demoUrl: "https://animal-rho-six.vercel.app/",
+    },
+    {
+      title: "VerdictAI – AI‑Powered Legal Assistant",
+      description:
+        "Full‑stack legal assistant with real‑time Q&A for Bangladesh law using Gemini 2.5 Flash and a FAISS + Sentence Transformers RAG backend.",
+      imageUrl: "/2.png",
+      technologies: [
+        "Next.js",
+        "FastAPI",
+        "Gemini 2.5 Flash",
+        "FAISS",
+        "Sentence Transformers",
         "TypeScript",
         "Python",
       ],
@@ -29,81 +97,20 @@ export function Projects() {
       demoUrl: "https://verdict-ai-psi.vercel.app/",
     },
     {
-      title: "AquaFin",
+      title: "AquaFin – Aquatic E‑commerce Platform",
       description:
-        "E-commerce platform for aquatic products with authentication, cart, reviews, and real-time updates.",
+        "E‑commerce for aquatic products with React + Express, Firebase authentication, PostgreSQL, admin dashboard, cart, reviews, and realtime updates.",
       imageUrl: "/3.png",
       technologies: [
         "React.js",
         "Express.js",
-        "Firebase",
+        "Firebase Auth",
         "PostgreSQL",
+        "Firestore",
         "TailwindCSS",
       ],
       githubUrl: "https://github.com/kaho0/AquaFin",
       demoUrl: "https://aqua-fin-34ev.vercel.app/",
-    },
-
-    {
-      title: "My Vid",
-      description:
-        "A YouTube-inspired app with video search, categories, and smooth playback for an engaging viewing experience.",
-      imageUrl: "https://i.ibb.co.com/RkDfPRc3/image.png",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "DaisyUI"],
-      githubUrl: "https://github.com/kaho0/My-Vid",
-      demoUrl: "https://you-vid-xi.vercel.app/",
-    },
-    {
-      title: "Voyage Vista",
-      description:
-        "Travel booking platform that lets users explore destinations, view details, and book trips with ease.",
-      imageUrl: "https://i.ibb.co.com/H12ph08/image.png",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "DaisyUI"],
-      githubUrl: "https://github.com/kaho0/Voyage-vista",
-      demoUrl: "https://vista-omega.vercel.app/",
-    },
-    {
-      title: "Gradiaaa",
-      description:
-        "Full-stack web app that enhances communication and resource sharing between students and teachers.",
-      imageUrl: "https://i.ibb.co.com/9k37Cqjc/image.png",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-      githubUrl: "https://github.com/kaho0/Gradiaaa",
-      demoUrl: "https://gradiaaa.vercel.app/",
-    },
-    {
-      title: "Skylaa",
-      description:
-        "Real-time chat application built with the MERN stack and Socket.IO for instant communication.",
-      imageUrl: "https://i.ibb.co.com/bgzBhqKJ/image.png",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Socket.IO",
-        "Zustand",
-      ],
-      githubUrl: "https://github.com/kaho0/Skylaa",
-      demoUrl: "https://skyla-7t80.onrender.com/",
-    },
-    {
-      title: "Meloo",
-      description:
-        "Music streaming platform with a clean interface and smart recommendations powered by Gemini API.",
-      imageUrl: "https://i.ibb.co.com/gMksX2g6/image.png",
-      technologies: ["React.js", "TailwindCSS", "Gemini API"],
-      githubUrl: "https://github.com/kaho0/Meloo",
-      demoUrl: "https://melobo.vercel.app/",
-    },
-    {
-      title: "Flow",
-      description:
-        "A modern web application with sleek UI and responsive design.",
-      imageUrl: "https://i.ibb.co.com/5XwxFh1s/image.png",
-      technologies: ["React.js", "TailwindCSS"],
-      githubUrl: "https://github.com/kaho0/Aura",
-      demoUrl: "https://aura-nu.vercel.app/",
     },
   ];
 
@@ -113,7 +120,7 @@ export function Projects() {
         Projects
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
